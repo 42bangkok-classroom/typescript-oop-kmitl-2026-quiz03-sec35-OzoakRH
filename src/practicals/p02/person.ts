@@ -1,13 +1,13 @@
 export class Person {
     firstname: string = ''
     lastname: string = ''
-    private _age: number = 0
+    private age: number = 0
     static COUNTRY: string = 'Thailand'
     setAge(age:number){
-        this._age = age
+        this.age = age
     }
     getAge(): number {
-        return this._age
+        return this.age
     }
     getFullName(): string {
         return `${this.firstname} ${this.lastname}`
